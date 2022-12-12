@@ -1,0 +1,366 @@
+*{
+	font-family: 'Roboto';
+}
+
+p{margin: 0; padding: 0; font-size: 20px;}
+
+body{background-color: #000;}
+
+section{
+	width: 100%;
+	background-color: #fff;
+}
+
+h1, h2, h3, h4, h5{
+	font-family: 'Oranienbaum';
+
+}
+
+.container{max-width: 1110px;}
+
+#header{
+	background-image: url('img/bg-main.png');
+	background-repeat: no-repeat;
+	background-position: center center;      
+	background-repeat: no-repeat;       
+	background-size: cover;     
+	height: 700px;
+	max-width: 1110px;
+	overflow: hidden;
+}
+
+.navbar{
+	width: 100%;
+	max-width: 1080px;
+	z-index: 10000;
+}
+
+.nav-item{
+	text-transform: uppercase;
+}
+
+.numbers a{
+	color: rgba(255,255,255);
+}
+
+
+.logo{
+	padding-top: 100px;
+
+}
+
+.mission{
+	text-transform: uppercase;
+
+}
+.mission h3{
+	color: rgb(255,255,255);
+}
+
+.mission p{
+	color: rgb(178,160,105);
+	text-decoration: underline;
+}
+
+.main-content{
+	text-align: center;
+	margin: 0 auto;
+}
+
+.main-content p{
+	font-size: 21px;
+	padding: 0 5rem 2rem 5rem;
+}
+
+.box{
+	position: relative;
+	overflow: hidden;
+}
+ 
+/* Верхний левый угол */
+.ribbon-1 {
+	width: 300px;
+	padding: 8px;
+	position: absolute;
+	text-align: center;
+	color: #f0f0f0;
+	top: 40px;
+	left: -60px;
+	transform: rotate(-35deg);
+	background-color: #e43;
+}
+
+.price{
+	padding-bottom: 10px;
+}
+
+.s3 img{
+	width: 100%;
+	object-fit: cover;
+}
+
+.s3 p{
+	text-align: center;
+	
+}
+
+.s3 p a{
+	color: rgba(0,0,0,.5);
+}
+
+.s4 table{
+	background-color: rgb(255,240,0);
+	border-color: rgb(253,195,0);
+}
+
+td, tr{
+	border: 1px solid rgb(253,195,0);
+	
+}
+
+.text{
+	width: 50%;
+}
+
+.n-price{
+	font-size: 26px;
+}
+
+.old-price {
+  position: relative;
+  color: #7f94a1;
+  font-size: 20px;
+}
+
+.old-price:before {
+  border-bottom: 3px solid red;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 70%;
+  transform: rotate(-12deg);
+}
+
+
+.table thead th{
+	border: 0px;
+}
+
+.table td{
+	border-top: 0px;
+}
+
+.table div{
+	width: 100px;
+	line-height: 1rem;
+}
+
+tr span{
+	font-size: 12px;
+}
+
+.table-price{
+	font-size: 22px;
+}
+
+.card-body{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.card{
+	transition: all .3s ease;
+}
+
+.card:first-child{
+	margin-right: 30px;
+}
+
+.card:last-child{
+	margin-left: 30px;
+}
+
+.card:hover{
+	box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+
+.card p{
+	line-height: normal;
+}
+
+.gallery{
+	padding: 50px;
+}
+
+.gallery-content{
+	width: 50%;
+	margin: 0 auto;
+}
+
+.gallery a{
+	text-decoration: none;
+	display: flex;
+}
+
+.gallery-content a p{
+	margin-left: 1.5rem;
+}
+.gallery a img{
+	width: 200px;
+}
+
+.gallery a p{
+	color: #000;
+}
+
+.footer-text p{
+	margin-top: 8px;
+}
+
+.footer-text p a{
+	color: #fff;
+}
+
+.footer-text p a:hover{
+	text-decoration: none;
+	color: rgb(190,208,218);
+}
+
+.noborder{
+	border: none;
+}
+
+.noborder span{
+	font-size: 18px;
+	padding: 5px;
+}
+
+@media (max-width: 1200px){
+	.ribbon-1 {
+		width: 200px;
+		padding: 8px;
+		
+		top: 20px;
+		left: -30px;
+	}
+
+	.navbar{
+		padding-left: 20px;
+		padding-right: 100px;
+	}
+
+
+
+}
+
+@media (max-width: 1000px){
+	.gallery-content{
+		width: 75%;
+	}
+
+	.navbar{
+		padding-left: 20px;
+		padding-right: 120px;
+	}
+	
+	.card{
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+	.card:first-child{
+		margin-right: auto;
+	}
+
+	.card:last-child{
+		margin-left: 0;
+	}
+
+}
+
+@media (max-width: 991px){
+	.contacts, .numbers a{
+		margin-top: 15px;
+	}
+
+	.navbar{
+		position: absolute;
+		background-color: rgba(0,0,0,0);
+	}
+}
+
+
+@media (max-width: 767px){
+	.text{
+		width: 75%;
+	}
+
+	.gallery-content{
+		width: 100%;
+	}
+
+	.main-content p{
+
+		font-size: 18px;
+	}
+
+	.card, .card:first-child, .card:last-child{
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.main-content p{
+		font-size: 18px;
+		padding: 0 3rem 2rem 3rem;
+	}
+
+
+
+}
+
+
+@media (max-width: 550px){
+	.gallery a{
+		display: block;
+	}
+
+	.gallery a{
+		margin: 2rem auto;
+	}
+
+	.gallery-content a p{
+		margin: 0;
+	}
+
+	.card-body{
+		padding: .5rem;
+	}
+
+}
+
+@media (max-width: 431px){
+	h1{
+		font-size: 1.5rem;
+	}
+	.main-content p{
+		margin-top: 1.5rem !important;
+		padding-bottom: 1rem !important;
+		font-size: 14px;
+	}
+
+	.ribbon-1 {
+		width: 150px;
+		padding: 4px;
+		
+		top: 15px;
+		left: -40px;
+	}
+
+	.main-content p{
+		text-align: left;
+		font-size: 20px;
+		padding: 0 1rem 2rem 1rem;
+	}
+
+}
